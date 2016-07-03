@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi"/>
+    
+    <title>Test</title>
+    
+    <style>
+        *
+        {
+            //-webkit-tap-highlight-color: rgba(0,0,0,0);
+            text-decoration: none;
+        }
+    
+        html,body
+        {
+            -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+            -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+            -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+        }
+    
+        #div-a
+        {
+            background:#FBA;
+            color:#FFF;
+
+            border-radius: 25px 5px;
+        }
+
+
+    </style>
+    
+    <script type="text/javascript">
+        
+        function showResult(result) {
+            document.getElementById("result").innerText = result;
+        }
+    
+    </script>
+    
+</head>
+
+<body style="background:#CDE; color:#FFF">
+    
+    <div>
+        <font size="3" color="black">test share：</font>
+        <textarea  id="input" style="font-size:10pt;color:black;"></textarea>
+    </div>
+    <br/>
+    
+    <div>
+        <font size="3" color="black">native call js result： <b id="result"> </b> </font>
+    </div>
+    <br/>
+    
+    <div id="div-a">
+        <center>
+            
+            <br/>
+            <input type="button" value="test share" onclick="native.functionNameForJS(input.value,'测试');" />
+            <br/>
+            <br/>
+            
+            
+            <input type="button" value="native call js" onclick="native.shareText('native call js');" />
+            <br/>
+            <br/>
+            
+            <a id="push" href="#" onclick="native.showAlertWithMessage('I am a alert');">
+                show alert
+            </a>
+            
+            <br/>
+            <br/>
+            
+        </center>
+    </div>
+
+    
+    
+</body>
+
+</html>

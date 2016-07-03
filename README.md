@@ -7,6 +7,8 @@
 - 见名知义，是作为UIWebView的一个中间代理层
 - 该项目依赖JavaScriptCore.framework
 -  public api见下图
+
+
 ![WebViewActionProxy][image-1]
 
 ## Installation &nbsp;安装
